@@ -2,11 +2,17 @@
 
 #### Learn
 
-1. [Collection](https://github.com/dmsals216/MyStudy/tree/master/Java/Collection)
+1. [Solid](https://github.com/dmsals216/MyStudy/tree/master/Java/Solid)
 
-2. [Interface](https://github.com/dmsals216/MyStudy/tree/master/Java/AbstractAndInterface)
+2. [String](https://github.com/dmsals216/MyStudy/tree/master/Java/String)
 
-3. [Annotation](https://github.com/dmsals216/MyStudy/tree/master/Java/Annotation)
+3. [Math](https://github.com/dmsals216/MyStudy/tree/master/Java/Math)
+
+4. [Collection](https://github.com/dmsals216/MyStudy/tree/master/Java/Collection)
+
+5. [Interface](https://github.com/dmsals216/MyStudy/tree/master/Java/AbstractAndInterface)
+
+6. [Annotation](https://github.com/dmsals216/MyStudy/tree/master/Java/Annotation)
 
 #### MiniProject
 
