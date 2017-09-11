@@ -9,3 +9,7 @@
 #### MiniProject
 
 1. [ArrayList](https://github.com/dmsals216/MyStudy/tree/master/Java/MakeArrayList)
+
+2. [MemoToBasic](https://github.com/dmsals216/MyStudy/tree/master/Java/MemoToBasic)
+
+3. [MemoToMVC](https://github.com/dmsals216/MyStudy/tree/master/Java/MemoToMVC)
