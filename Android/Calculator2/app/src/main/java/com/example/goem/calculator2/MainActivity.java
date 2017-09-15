@@ -154,6 +154,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     stackTemp.push(calc(temp2));
                 }
+                if(i == temp.length) {
+                    break;
+                }
                 stackTemp.push(temp[i]);
             }
             int stackSize = stackTemp.size();
@@ -170,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultViewText.setText(result +"");
             }
             preViewText.setText("");
+            getpreView = "";
             equalCheck = true;
         }
     }
@@ -214,6 +218,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
+        if(equalCheck == true) {
+            input = buttonInt;
+            preViewText.setText(input);
+            equalCheck = false;
+            resultViewText.setText("");
+            return;
+        }
+
         String imsi = preViewText.getText() +"";
         String imsi2 = imsi.charAt(imsi.length() - 1) + "";
 
@@ -232,6 +244,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void pushOperatorButton(String operator) {
         if(firstCheck == false) {
             return;
+        }
+        if(equalCheck == true) {
+            getpreView = resultViewText.getText() + operator;
+            input = "";
+            equalCheck = false;
+            preViewText.setText(getpreView);
+            resultViewText.setText("");
         }
         String imsi = preViewText.getText() + "";
         String imsi2 = imsi.charAt(imsi.length() - 1) + "";
