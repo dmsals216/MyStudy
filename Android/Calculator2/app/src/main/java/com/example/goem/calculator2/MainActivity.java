@@ -178,36 +178,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private String calc(String string) {
-        result = 0.0;
-        String[] temp = string.split("(?<=[x/+-])|(?=[x/+-])");
-        ArrayList<String> stackImsi = new ArrayList<>();
-        for(int i = 0; i < temp.length; i++) {
-            stackImsi.add(temp[i]);
-            if(temp[i].equals("x") || temp[i].equals("/")) {
-                stackImsi.remove(i);
-                stackImsi.remove(i - 1);
-                double a = Double.parseDouble(temp[i - 1]);
-                double b = Double.parseDouble(temp[i + 1]);
-                if (temp[i].equals("x")) {
-                    stackImsi.add(Double.toString(a * b));
-                } else {
-                    stackImsi.add(Double.toString(a / b));
+        private String calc(String string) {
+            result = 0.0;
+            String[] temp = string.split("(?<=[x/+-])|(?=[x/+-])");
+            ArrayList<String> stackImsi = new ArrayList<>();
+            for(int i = 0; i < temp.length; i++) {
+                stackImsi.add(temp[i]);
+                if(temp[i].equals("x") || temp[i].equals("/")) {
+                    stackImsi.remove(i);
+                    stackImsi.remove(i - 1);
+                    double a = Double.parseDouble(temp[i - 1]);
+                    double b = Double.parseDouble(temp[i + 1]);
+                    if (temp[i].equals("x")) {
+                        stackImsi.add(Double.toString(a * b));
+                    } else {
+                        stackImsi.add(Double.toString(a / b));
+                    }
                 }
             }
-        }
-        for(int i = 0; i < stackImsi.size(); i++) {
-            if(stackImsi.get(i).equals("+") || stackImsi.get(i).equals("-")) {
-                if(stackImsi.get(i).equals("+")) {
-                    result += Double.parseDouble(stackImsi.get(i - 1)) + Double.parseDouble(stackImsi.get(i + 1));
-                }
-                if(stackImsi.get(i).equals("-")) {
-                    result += Double.parseDouble(stackImsi.get(i - 1)) - Double.parseDouble(stackImsi.get(i + 1));
+            for(int i = 0; i < stackImsi.size(); i++) {
+                if(stackImsi.get(i).equals("+") || stackImsi.get(i).equals("-")) {
+                    if(stackImsi.get(i).equals("+")) {
+                        result += Double.parseDouble(stackImsi.get(i - 1)) + Double.parseDouble(stackImsi.get(i + 1));
+                    }
+                    if(stackImsi.get(i).equals("-")) {
+                        result += Double.parseDouble(stackImsi.get(i - 1)) - Double.parseDouble(stackImsi.get(i + 1));
+                    }
                 }
             }
+            return result +"";
         }
-        return result +"";
-    }
 
 
     private  void pushButton(String buttonInt) {

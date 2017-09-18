@@ -2,6 +2,8 @@
 
 #### Learn
 
+1. [CustomView](https://github.com/dmsals216/MyStudy/tree/master/Android/CustomView)
+
 #### MiniProject
 
 1. [Calculator](https://github.com/dmsals216/MyStudy/tree/master/Android/MyApplication2)
