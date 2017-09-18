@@ -23,9 +23,6 @@ public class CustomView extends View {
     int strokeSize = 0;
     int paintColor = Color.BLACK;
 
-    boolean strokeCheck = false;
-    boolean colorCheck = false;
-
     public CustomView(Context context) {
         super(context);
         pathList = new ArrayList<>();
