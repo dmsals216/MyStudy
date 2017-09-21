@@ -13,3 +13,5 @@
 3. [SpreadCubes](https://github.com/dmsals216/MyStudy/tree/master/Android/SpreadCubes)
 
 4. [Paint_First](https://github.com/dmsals216/MyStudy/tree/master/Android/Paint_First)
+
+5. [AndroidMemo](https://github.com/dmsals216/MyStudy/tree/master/Android/AndroidMemo)
